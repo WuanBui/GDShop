@@ -1,4 +1,3 @@
-"use client"
 import { useEffect, useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
@@ -259,7 +258,7 @@ function OurStore() {
                   />
                 </div>
 
-                <ReactPaginate
+                {/* <ReactPaginate
                   previousLabel="Previous"
                   nextLabel="Next"
                   pageClassName="page-item"
@@ -277,7 +276,7 @@ function OurStore() {
                   //   onPageChange={handlePageChange}
                   containerClassName="pagination"
                   activeClassName="active"
-                />
+                /> */}
               </div>
             </div>
           </div>

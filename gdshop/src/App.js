@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -16,8 +14,10 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Profile from "./pages/Profile";
 import Orders from "./pages/Orders";
-import {privateroute} from "./routing/privateroute";
-import {openroute} from "./routing/openroute";
+import { PrivateRoute } from "./routing/PrivateRoute";
+import { OpenRoute } from "./routing/OpenRoute";
+import "./App.css";
+import "./Responsive.css";
 
 function App() {
   return (
@@ -29,49 +29,49 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="product" element={<OurStore />} />
-            <Route
-              path="cart"
-              element={
-                <>
-                  <cart />
-                </>
-              }
-            />
+            <Route path="cart" element={<Cart />} />
             <Route
               path="my-orders"
               element={
-                <privateRoute>
+                <PrivateRoute>
                   <Orders />
-                </privateRoute>
+                </PrivateRoute>
               }
             />
 
             <Route
               path="my-profile"
               element={
-                <privateroute>
+                <PrivateRoute>
                   <Profile />
-                </privateroute>
+                </PrivateRoute>
               }
             />
 
-            <Route path="checkout" element={<Checkout />} />
+            <Route
+              path="checkout"
+              element={
+                <PrivateRoute>
+                  <Checkout />
+                </PrivateRoute>
+              }
+            />
 
             <Route
               path="signup"
               element={
-                <openroute>
+                <OpenRoute>
                   <Signup />
-                </openroute>
+                </OpenRoute>
               }
             />
 
             <Route
               path="login"
               element={
-                <openroute>
+                <OpenRoute>
                   <Login />
-                </openroute>
+                </OpenRoute>
               }
             />
 

@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect } from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";

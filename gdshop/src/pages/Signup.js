@@ -1,4 +1,4 @@
-"use client"
+
 import { useDispatch, useSelector } from "react-redux";
 import BreadCrumb from "../components/BreadCrumb";
 import CustomInput from "../components/CustomInput";

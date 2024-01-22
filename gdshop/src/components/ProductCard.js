@@ -1,4 +1,4 @@
-"use client"
+
 import ReactStars from "react-rating-stars-component";
 import { useDispatch } from "react-redux";
 import { Link, useLocation } from "react-router-dom";

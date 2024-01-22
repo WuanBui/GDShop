@@ -1,4 +1,4 @@
-"use client"
+
 import { useDispatch, useSelector } from "react-redux";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
@@ -55,7 +55,7 @@ function WishList() {
                         />
                       </div>
                       <div className="bg-white p-3">
-                        <h5 className="wishlist-tilte">{item?.title}</h5>
+                        <h5 className="wishlist-title">{item?.title}</h5>
                         <h6 className="wishlist-price">{item?.price}$</h6>
                       </div>
                     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className="footer py-3">
+      <footer className="footer py-3 home-wrapper-1">
         <div className="container-xxl">
           <div className="row d-flex align-items-center justify-content-between">
             <div className="col-12 col-xl-5">
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <footer className="footer py-3">
+      <footer className="footer py-3 home-wrapper-1">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 col-xl-4">
@@ -41,14 +41,14 @@ function Footer() {
                 </address>
 
                 <a
-                  href="tel:+84 0905632492"
+                  href="tel:+84 0338339202"
                   className="mt-2 d-block mb-2 text-white"
                 >
-                  Hotline: 0905632492
+                  Hotline: 0338339202
                 </a>
 
                 <a
-                  href="mailto:volelongthaipnt@gmail.com"
+                  href="mailto:Suvpklock@gmail.com"
                   className="mt-4 d-block mb-2 text-white"
                 >
                   Email: Suvpklock@gmail.com
@@ -73,7 +73,7 @@ function Footer() {
               </div>
             </div>
             <div className="col-4 col-xl-3 footer-info">
-              <h4 className="text-white mb-4">Infomation</h4>
+              <h4 className="text-white mb-4">Information</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2 mb-1">Private Policy</Link>
                 <Link className="text-white py-2 mb-1">Refund Policy</Link>
